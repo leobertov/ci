@@ -20,7 +20,7 @@ RUN ln -s public html
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN cp -p /usr/local/bin/composer /var/www
 RUN chmod +x /var/www/composer
-RUN composer install
+#RUN composer install
 #            cp .env.example .env && \
 #            php artisan key:generate && \
 #            php artisan config:cache
